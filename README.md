@@ -9,14 +9,12 @@
 ## Орчны хувилбар
 
 ### `java -version`
-![Java Version](Screenshot/java-version.png)
 debain13@debian:~/Lab09-Gobi-Bagsh$ java -version
 openjdk version "21.0.13" 2026-10-20
 OpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)
 OpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)
 
 ### `mvn -version`
-![Maven Version](Screenshot/maven-version.png)
 debain13@debian:~/Lab09-Gobi-Bagsh$ mvn -version
 Apache Maven 3.9.9
 Maven home: /usr/share/maven
