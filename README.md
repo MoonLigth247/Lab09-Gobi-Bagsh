@@ -220,3 +220,24 @@ Branch хамралт 100% байхад энэ алдаа "үл үзэгдэгч
 ## AI туслах ашигласан эсэх
 
 AI туслахыг README-ийн бүтэц зохиох ба тестийн кодыг эхэлж бичихэд ашигласан. Бүх тестийг өөрөө ажиллуулж, хамралтын тоог results/ файлуудтай тулгасан.
+
+## Бүх ажлын дараа өөрийн локал дээрх шалгалт
+
+debain13@debian:~/Lab09-Gobi-Bagsh$ mvn -B verify | grep "Tests run:\|BUILD"        
+
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.100 s -- in mn.edu.must.sqat.ScholarshipCalculatorTest
+
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] BUILD SUCCESS
+
+debain13@debian:~/Lab09-Gobi-Bagsh$ grep -c "Алдааны шалтгаан" README.md           
+
+1
+
+debain13@debian:~/Lab09-Gobi-Bagsh$ grep -a "Tests run: 21" results/mvn-verify-B.txt
+
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s -- in mn.edu.must.sqat.ScholarshipCalculatorTest
+
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+
