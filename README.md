@@ -10,9 +10,9 @@
 
 ### `java -version`
 debain13@debian:~/Lab09-Gobi-Bagsh$ java -version
-openjdk version "21.0.13" 2026-10-20
-OpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)
-OpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)
+openjdk version "17.0.21" 2026-10-20
+OpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)
+OpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)
 
 ### `mvn -version`
 debain13@debian:~/Lab09-Gobi-Bagsh$ mvn -version
@@ -20,7 +20,7 @@ Apache Maven 3.9.9
 Maven home: /usr/share/maven
 Java version: 17.0.21, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-17-jdk-amd64
 Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "6.12.113+deb13-amd64", arch: "amd64", family: "unix"
+OS name: "linux", version: "6.12.117+deb13-amd64", arch: "amd64", family: "unix"
 
 ---
 
@@ -108,7 +108,7 @@ OS name: "linux", version: "6.12.113+deb13-amd64", arch: "amd64", family: "unix"
 | N3→N4 (T) | `scholarship_violation_returnsZero` |
 | N3→N5 (F) | `scholarship_full` |
 | N5→N6 (T) | `scholarship_full` |
-| N5→N7 (F) | `scholarship_gpaHighCreditsLow_returns50` |
+| N7→N9 (F) | `scholarship_gpa34CreditsLow_returns50`, `scholarship_gpaHighCreditsLow_returns50` |
 | N7→N8 (T) | `scholarship_70` |
 | N7→N9 (F) | `scholarship_gpa34CreditsLow_returns50` |
 | N9→N10 (T) | `scholarship_50` |
@@ -169,18 +169,6 @@ OS name: "linux", version: "6.12.113+deb13-amd64", arch: "amd64", family: "unix"
 
 **Алдааны мөр:**
 expected: <D> but was: <F>
-
-### Алдааны шалтгаан
-
-## Хэсэг D — Хамралт 100%, гэхдээ алдаа амьд
-
-### Унасан тест (`results/mvn-test-D-fail.txt`)
-
-Тест: `letterGrade_60_isD`
-
-```
-expected: <D> but was: <F>
-```
 
 ### Алдааны шалтгаан
 
