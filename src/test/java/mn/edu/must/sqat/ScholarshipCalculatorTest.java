@@ -73,7 +73,7 @@ class ScholarshipCalculatorTest {
         assertEquals(0.0, calc.gpa(new double[]{50}), 0.01); // F=0 (default)
     }
 
-    // ----- scholarship()-ийн || 3 нөхцөл тусдаа (Page 13!) -----
+    // ----- scholarship()-ийн || 3 нөхцөл тусдаа -----
     @Test
     void scholarship_negativeGpa_throws() {
         assertThrows(IllegalArgumentException.class,
@@ -98,7 +98,7 @@ class ScholarshipCalculatorTest {
         assertEquals(0, calc.scholarship(3.9, 16, true));
     }
 
-    // ----- scholarship() && F салаанууд (Page 13!) -----
+    // ----- scholarship() && F салаанууд -----
     @Test
     void scholarship_gpaHighCreditsLow_returns50() {
         // gpa>=3.8 true, credits>=15 FALSE → 2-р if руу
@@ -157,7 +157,7 @@ class ScholarshipCalculatorTest {
 
     @Test
     void letterGrade_60_isD() {
-        assertEquals("D", calc.letterGrade(60));     // ❌ ЭНД УНАНА!
+        assertEquals("D", calc.letterGrade(60));
     }
 
     @Test
